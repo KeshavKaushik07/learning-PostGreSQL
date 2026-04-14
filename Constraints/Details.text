@@ -1,0 +1,14 @@
+-- Constraints
+
+-- Primary Key 
+	-- 1. can't be null
+	-- 2. must be Unique
+	-- 3. one table can have only one primary key
+
+-- Not null  - column can't be null
+
+-- default  - can add default value to column if not provided  default 'savings';
+
+-- unique - only uique value can be inserted
+
+-- auto increment(mySQL) serial(PSQL) - automatic increment in field
