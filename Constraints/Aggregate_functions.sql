@@ -19,3 +19,16 @@ select min(salary) from employee; -- minimum salary
 -- MAX() ---
 
 select max(salary) from employee; -- maximum salary
+
+
+-- GROUP BY ---
+
+-- select * from employee group by dept; -- error cuz of wrong grouping
+
+select dept from employee group by dept;
+
+select dept , count(id) from employee group by dept; -- gives data of total employee in every department 
+
+select dept , sum(salary) from employee group by dept;
+
+
