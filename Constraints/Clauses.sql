@@ -33,3 +33,26 @@ select dept from employee; -- gives dept but can be duplicate
 
 select distinct dept from employee; -- gives only unique vales 
 
+-- ORDER BY --- (by default in acending order for decending use desc)
+
+select * from employee order by fname; -- show table in order accourding to any column 
+
+select * from employee order by fname desc; -- order by in desc
+
+-- LIMIT --- 
+
+select * from employee limit 4; -- only 4 record will be shown
+
+-- LIKE --- (it's takes case sencitive values ) ( '' )
+
+select * from employee where fname like 'A%'; -- frist character should be A
+
+select * from employee where fname like '%a'; -- last character should be a
+
+select * from employee where fname like '%i%' -- middle word should be i
+
+select * from employee where fname like '____'; -- fname which have only four charachers
+
+select * from employee where dept like '__'; 
+
+select * from employee where fname like '_a%' -- second character should be a
