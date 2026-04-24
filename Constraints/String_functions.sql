@@ -45,3 +45,29 @@ select dept, reverse(dept) from employee;
 select length('hello'); -- give total lenght of any string
 
 select fname , length(fname) as total_character from employee;
+
+select fname from employee where length(fname) > 5;
+
+-- UPPER -- LOWER ---
+
+select upper(fname) , lname from employee; -- convert in upper case
+
+select dept , lower(dept) from employee; -- convert in lower case
+
+-- LEFT -- RIGHT ---
+
+select left('hello world',5); -- how many characters you want from left 
+
+select right('hello world',5); -- how many from right 
+
+-- TRIM ---
+
+select trim('  Hello   !   '); -- remove spaces from left and right but not from the middle or else
+
+select length('  Hello !  ') , length(trim('  Hello !  '));
+
+-- POSITION ---
+
+select position('ell' in ' hi hello'); -- give position of that word in given sentence
+
+
